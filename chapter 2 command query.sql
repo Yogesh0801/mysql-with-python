@@ -87,3 +87,16 @@ DELETE FROM students WHERE marks < 40;
 DELETE FROM students WHERE age > 25 AND course = 'Python';
 DELETE FROM students;
 
+-- DQL
+-- Display all columns
+
+SELECT * FROM students;
+
+-- SELECT with calculation
+SELECT name, course, age + 5 FROM students;
+
+-- SELECT with alias
+SELECT name AS stu_Name, course AS course_Name FROM students;
+
+-- SELECT DISTINCT
+SELECT DISTINCT course FROM students;
